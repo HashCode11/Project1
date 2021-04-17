@@ -20,7 +20,7 @@ def Merge_Audios(audios):
     return Audios_Combined
 
 def Generate_Skeleton():
-    audio = AudioSegment.from_mp3('railway.mp3')
+    audio = AudioSegment.from_mp3('Announcement_Recording.mp3')
 
     # 1 - Generate "kripya dheyan dijiye"
     start = 88000
@@ -92,6 +92,6 @@ if __name__ == "__main__":
     print("Generating Skeleton...")
     Generate_Skeleton()
     print("Now Generating Announcement...")
-    Generate_Announcement("announce_hindi.xlsx")
+    Generate_Announcement("Data_of_Trains.xlsx")
     
 
